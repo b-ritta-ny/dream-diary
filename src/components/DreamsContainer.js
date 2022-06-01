@@ -1,9 +1,18 @@
 import React from 'react';
-import Dreams from './Dreams';
+import Dream from './Dream';
 
 
-function DreamsContainer() {
-    return
+function DreamsContainer({ dreams }) {
+
+    return (
+        <div className="dreams-container">
+            {dreams.map((dream) => (
+                <div key={dream.id}>
+                    <Dream dream={dream} />
+                </div>
+            ))};
+        </div>
+    )
 }
 
 export default DreamsContainer;

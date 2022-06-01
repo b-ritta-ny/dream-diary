@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import DreamsContainer from './DreamsContainer';
 import NewDreamForm from './NewDreamForm';
 
 function App() {
+
+  const [dreams, setDreams] = useState([])
+  const [isForm, setIsForm] = useState(false)
+
+  useEffect(() => {
+    fetch('http://localhost:3000/dreams')
+      .then(resp => resp.json())
+      .then(data => setDreams(data))
+  }, [])
+  console.log(dreams)
+
+  function handleNewDream(newDream) {
+    setDreams([...dreams, newDream]);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <Header />
+      <div className="sidebar">
+        <button onClick={() => setIsForm(!isForm)}>Show/hide new diary entry form</button>
+        {isForm ? <NewDreamForm handleNewDream={handleNewDream} /> : null}
+      </div>
+      <DreamsContainer dreams={dreams} />
     </div>
   );
 }
