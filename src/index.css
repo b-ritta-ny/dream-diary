@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
 }
 
-.app {
+.App {
   display: flex;
   flex-direction: row;
 }
@@ -58,4 +58,8 @@ button {
   border: solid black 1px;
   padding: 0.5em;
   cursor: pointer;
+}
+
+#category {
+ margin-bottom: .5em;
 }

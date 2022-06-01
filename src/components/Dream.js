@@ -3,6 +3,7 @@ import React from 'react';
 
 function Dream({ dream }) {
     const { id, date, title, category, entry, tags } = dream;
+    // const tag = tags.forEach(tag => tag = `${tag}, `)
 
     return (
         <div>

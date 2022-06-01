@@ -10,7 +10,7 @@ function DreamsContainer({ dreams }) {
                 <div key={dream.id}>
                     <Dream dream={dream} />
                 </div>
-            ))};
+            ))}
         </div>
     )
 }

@@ -9,7 +9,12 @@ function App() {
   const [isForm, setIsForm] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:3000/dreams')
+    fetch('http://localhost:3000/dreams/', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
       .then(resp => resp.json())
       .then(data => setDreams(data))
   }, [])
@@ -28,7 +33,7 @@ function App() {
       </div>
       <DreamsContainer dreams={dreams} />
     </div>
-  );
+  )
 }
 
 export default App;
