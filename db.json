@@ -1,40 +1,51 @@
 {
-    "dreams": [
-        {
-            "id": 1,
-            "date": "11/10/2020",
-            "title": "Bird Lover in Peril",
-            "category": "Sad",
-            "entry": "I had a lover who turned into a bird person, I was desperately trying to find them medical care in a hospital. People wanted to study them and I was trying to sneak around and find medicine for them or someone who would help them.",
-            "tags": [
-                "stressful",
-                "love",
-                "animals"
-            ]
-        },
-        {
-            "id": 2,
-            "date": "10/15/2021",
-            "title": "Animorphs???",
-            "category": "Weird",
-            "entry": "There was an oil spill that created contaminated algae growth. Nature evolved in weird ways because of it. Crane/pelican with human body. Dolphin with human legs and arms and torso. You name it, it existed.",
-            "tags": [
-                "nature",
-                "animals",
-                "evolution",
-                "wtf"
-            ]
-        },
-        {
-            "id": 3,
-            "date": "12/21/2021",
-            "title": "Detroit: Become Human... Reversed",
-            "category": "Interesting",
-            "entry": "Dream about being an Android. Ethan is still human, although life expectancy in future is way longer than that of days gone by, but death cannot be escaped.",
-            "tags": [
-                "futuristic",
-                "life and death"
-            ]
-        }
-    ]
+  "dreams": [
+    {
+      "id": 1,
+      "date": "11/10/2020",
+      "title": "Bird Lover in Peril",
+      "category": "Sad",
+      "entry": "I had a lover who turned into a bird person, I was desperately trying to find them medical care in a hospital. People wanted to study them and I was trying to sneak around and find medicine for them or someone who would help him.",
+      "tags": [
+        "stressful",
+        "love",
+        "animals"
+      ]
+    },
+    {
+      "id": 2,
+      "date": "10/15/2021",
+      "title": "Animorphs???",
+      "category": "Weird",
+      "entry": "There was an oil spill that created contaminated algae growth. Nature evolved in weird ways because of it. Crane/pelican with human body. Dolphin with human legs and arms and torso. You name it, it existed.",
+      "tags": [
+        "nature",
+        "animals",
+        "evolution",
+        "wtf"
+      ]
+    },
+    {
+      "id": 3,
+      "date": "12/21/2021",
+      "title": "Detroit: Become Human... Reversed",
+      "category": "Interesting",
+      "entry": "Dream about being an Android. Ethan is still human, although life expectancy in future is way longer than that of days gone by, but death cannot be escaped.",
+      "tags": [
+        "futuristic",
+        "life and death"
+      ]
+    },
+    {
+      "date": "2022-05-31",
+      "title": "Wait a minute... wake up!!",
+      "category": "helpful",
+      "entry": "I accidentally turned my alarm off in my dream and slept until 5pm only to wake up in real life to realize I overslept by an hour and missed my first class of the day.",
+      "tags": [
+        "self aware",
+        "inception"
+      ],
+      "id": 4
+    }
+  ]
 }

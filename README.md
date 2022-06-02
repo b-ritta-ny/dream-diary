@@ -1,4 +1,45 @@
-# Getting Started with Create React App
+# Dream Diary README
+## Requirements
+All you need is an updated browser to open the HTML file in and JavaScript enabled for the application to display on the page.
+<br><br>
+
+## Project Notes
+This web application was created as a collaborative group project for Phase 2 of Flatiron School's full time software engineering bootcamp. 
+<br>
+<b>Frontend</b><br>
+The front end of this project was created with ReactJS.
+<br><br>
+<b>Backend</b><br>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) along with a RESTful JSON server to run the database.
+<br><br>
+
+## Setup
+
+- Open the parent file, find 'index.html', and open that file in your browser.
+
+- Scroll to view the different diary entries.
+
+- Click on the "show/hide" button in the top left corner of the page to toggle the new diary entry form.
+
+- Enter your new diary entry info and press the "Log your dream" button to submit the new post.
+
+- Navigate through the application using the navigation bar at the top of the page.
+
+<br>
+
+## Credits
+
+<a href="https://github.com/b-ritta-ny/dream-diary/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=b-ritta-ny/dream-diary" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -62,4 +103,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
