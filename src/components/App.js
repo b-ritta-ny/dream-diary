@@ -1,39 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import Home from './Home'
 import Header from './Header';
-import DreamsContainer from './DreamsContainer';
-import NewDreamForm from './NewDreamForm';
+import NavBar from './NavBar';
+import DreamPage from './DreamPage'
 
-function App() {
-
-  const [dreams, setDreams] = useState([])
-  const [isForm, setIsForm] = useState(false)
-
-  useEffect(() => {
-    fetch('http://localhost:3000/dreams/', {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
-      .then(resp => resp.json())
-      .then(data => setDreams(data))
-  }, [])
-  console.log(dreams)
-
-  function handleNewDream(newDream) {
-    setDreams([...dreams, newDream]);
-  }
-
+export default function App() {
   return (
-    <div className="App">
-      {/* <Header /> */}
-      <div className="sidebar">
-        <button onClick={() => setIsForm(!isForm)}>Show/hide new diary entry form</button>
-        {isForm ? <NewDreamForm handleNewDream={handleNewDream} dreams={dreams} /> : null}
-      </div>
-      <DreamsContainer dreams={dreams} />
-    </div>
-  )
-}
+    <Router>
+      <div>
+        <nav>
+          <div>
+              <Link to="/">Home</Link>
+          </div>
+          <div>
+              <Link to="/DreamPage">Dream Diary</Link>
+          </div>
+        </nav>
 
-export default App;
+        <Routes>
+          <Route path="/DreamPage" element={<DreamPage />} />
+          <Route path="/" element={<Home/>} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}

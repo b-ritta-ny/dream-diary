@@ -3,7 +3,10 @@ import NavBar from './NavBar';
 
 
 function Header() {
-    return
+    return (
+        <div id='header'>
+        </div>
+    )
 }
 
 export default Header;
