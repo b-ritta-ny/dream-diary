@@ -29,7 +29,7 @@ function App() {
       {/* <Header /> */}
       <div className="sidebar">
         <button onClick={() => setIsForm(!isForm)}>Show/hide new diary entry form</button>
-        {isForm ? <NewDreamForm handleNewDream={handleNewDream} /> : null}
+        {isForm ? <NewDreamForm handleNewDream={handleNewDream} dreams={dreams} /> : null}
       </div>
       <DreamsContainer dreams={dreams} />
     </div>
