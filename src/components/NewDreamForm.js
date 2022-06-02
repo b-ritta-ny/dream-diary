@@ -9,7 +9,7 @@ function NewDreamForm({ handleNewDream }) {
         title: '',
         category: '',
         entry: '',
-        tags: ['',],
+        tags: '',
     })
 
     const handleChange = (e) => {

@@ -8,10 +8,10 @@ function Tags({ formState, newTagList, setNewTagList, setFormState }) {
             e.preventDefault();
             setTags([...tags, e.target.value]);
             setNewTagList([...tags, e.target.value]);
-            const newTagString = [newTagList].toString();
+            // const newTagString = [newTagList].toString();
             setFormState({
                 ...formState,
-                [e.target.id]: newTagString
+                [e.target.id]: [...newTagList]
             })
             e.target.value = "";
             console.log(formState)
