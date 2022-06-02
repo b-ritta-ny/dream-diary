@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home'
 import Header from './Header';
 import NavBar from './NavBar';
@@ -11,16 +11,16 @@ export default function App() {
       <div>
         <nav>
           <div>
-              <Link to="/">Home</Link>
+            <Link to="/">Home</Link>
           </div>
           <div>
-              <Link to="/DreamPage">Dream Diary</Link>
+            <Link to="/DreamPage">Dream Diary</Link>
           </div>
         </nav>
 
         <Routes>
           <Route path="/DreamPage" element={<DreamPage />} />
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
