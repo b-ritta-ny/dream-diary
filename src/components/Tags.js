@@ -18,6 +18,7 @@ function Tags({ formState, newTagList, setNewTagList, setFormState }) {
         }
     };
 
+
     const handleRemoveTag = (removedTag) => {
         const newTags = tags.filter((tag) => tag !== removedTag);
         setTags(newTags);
@@ -27,7 +28,7 @@ function Tags({ formState, newTagList, setNewTagList, setFormState }) {
             <input id="tags" placeholder="tags (press enter to add)" onKeyDown={addTag} />
             {tags.map((tag, index) => {
                 return (
-                    <div key={index} className="tag" value={tags} >
+                    <div key={index} className="tag" value={tags}>
                         {tag} <span onClick={() => handleRemoveTag(tag)}>x</span>
                     </div>
                 );
