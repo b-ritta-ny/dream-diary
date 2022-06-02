@@ -33,8 +33,6 @@ function NewDreamForm({ handleNewDream }) {
             .then((newDream) => handleNewDream(newDream));
     }
 
-    const selectedTags = tags => console.log(tags)
-
     return (
 
         <form className="new-dream-form" onSubmit={handleSubmit}>
@@ -51,7 +49,7 @@ function NewDreamForm({ handleNewDream }) {
                 <option value="scary">scary</option>
             </select>
             <textarea type="text" id="entry" placeholder="Write your dream here..." rows={10} value={formState.entry} onChange={handleChange} />
-            <Tags formState={formState} handleChange={handleChange} selectedTags={selectedTags} newTagList={newTagList} setNewTagList={setNewTagList} />
+            <Tags formState={formState} newTagList={newTagList} setNewTagList={setNewTagList} setFormState={setFormState} />
             <input type="submit" value="Log your dream" />
 
         </form>
