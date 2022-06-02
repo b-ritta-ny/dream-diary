@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
 import DreamsContainer from './DreamsContainer';
 import NewDreamForm from './NewDreamForm';
 
