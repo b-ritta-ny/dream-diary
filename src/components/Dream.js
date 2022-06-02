@@ -3,8 +3,7 @@ import React from 'react';
 
 function Dream({ dream }) {
     const { id, date, title, category, entry, tags } = dream;
-    // const tag = tags.forEach(tag => tag = `${tag}, `)
-
+    const tagSpace = `${tags} `
     return (
         <div>
             <h4>Dreamt on {date}</h4>
@@ -12,7 +11,7 @@ function Dream({ dream }) {
             <h5>{category}</h5>
             <p>{entry}</p>
             <p>
-                <strong>Tags: {tags}</strong>
+                <strong>Tags: {tagSpace}</strong>
             </p>
         </div>
     )

@@ -9,7 +9,7 @@ function NewDreamForm({ handleNewDream }) {
         title: '',
         category: '',
         entry: '',
-        tags: ['',],
+        tags: '',
     })
 
     const handleChange = (e) => {
@@ -47,6 +47,7 @@ function NewDreamForm({ handleNewDream }) {
                 <option value="funny">funny</option>
                 <option value="weird">weird</option>
                 <option value="scary">scary</option>
+                <option value="helpful">helpful</option>
             </select>
             <textarea type="text" id="entry" placeholder="Write your dream here..." rows={10} value={formState.entry} onChange={handleChange} />
             <Tags formState={formState} newTagList={newTagList} setNewTagList={setNewTagList} setFormState={setFormState} />
