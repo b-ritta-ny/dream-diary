@@ -250,8 +250,8 @@ button:hover {
 
  .resourcespage {
   display: flex;
-  background-color: #dfcdee;
-  opacity: 0.9;
+  flex: 1 1 auto;
+  flex-direction: row;
 }
 
 .logo{
@@ -259,6 +259,7 @@ button:hover {
   width: 250px;
   height: 250px;
   float:left;
+  margin-top: -10px;
 }
 
 .headtext {
@@ -267,7 +268,8 @@ button:hover {
   font-style: normal;
   color:rgb(227, 148, 170);
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
+  padding-bottom: -50px;
 }
 
 .subtext {
@@ -276,5 +278,56 @@ button:hover {
   font-style: italic;
   color:rgb(227, 148, 170);
   text-align: center;
+  padding-top: -20px;
 
+}
+
+.rtitle{
+  color: #431144;
+  -webkit-text-stroke-color: #160411;
+  -webkit-text-stroke-width: .4px;
+  font-family: kepler-std, serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#reshead{
+  width: 750px;
+  height: 200px;
+}
+
+#logohead{
+  width: 250px;
+  height: 250px;
+}
+
+.resrow{
+    display: flex;
+    justify-content: center;
+    margin-right: 1200px;
+    margin-left: -180px;
+  }
+
+.rdiv{
+  flex-basis: 100px;
+  margin-top: 180px;
+  font-family: kepler-std, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+.rimg{
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.rimg:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 15px 15px rgba(61, 38, 77, 0.4);
 }
