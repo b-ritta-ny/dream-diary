@@ -1,9 +1,9 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home'
-import Header from './Header';
 import NavBar from './NavBar';
 import DreamPage from './DreamPage'
+import Resources from './Resources';
 
 export default function App() {
   return (
@@ -32,7 +32,8 @@ export default function App() {
 
         <Routes>
           <Route path="/DreamPage" element={<DreamPage />} />
-          <Route path="/" element={<Home/>} />
+          <Route path="/Resources" element={<Resources />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>

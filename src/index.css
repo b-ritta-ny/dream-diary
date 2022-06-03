@@ -17,12 +17,6 @@ nav {
   color: #040738;
 }
 
-.logo {
-  justify-content: right;
-  height: 40px;
-  width: 20px;
-}
-
 .homelink {
   font-family: kepler-std-display-subhead, serif;
   font-weight: 700;
@@ -55,6 +49,10 @@ nav {
   display: flex;
   width: 100%;
 
+}
+
+.DreamPage {
+  display: flex;
 }
 
 .App {
@@ -254,4 +252,29 @@ button:hover {
   display: flex;
   background-color: #dfcdee;
   opacity: 0.9;
+}
+
+.logo{
+  display: flex;
+  width: 250px;
+  height: 250px;
+  float:left;
+}
+
+.headtext {
+  font-family: kepler-std, serif;
+  font-weight: 700;
+  font-style: normal;
+  color:rgb(227, 148, 170);
+  text-align: center;
+  margin-top: 70px;
+}
+
+.subtext {
+  font-family: kepler-std, serif;
+  font-weight: 700;
+  font-style: italic;
+  color:rgb(227, 148, 170);
+  text-align: center;
+
 }

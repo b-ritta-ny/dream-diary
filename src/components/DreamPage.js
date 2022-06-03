@@ -26,7 +26,7 @@ function DreamPage() {
 
   return (
     <div className="dreampage" style={{
-      backgroundImage: `url(https://i.pinimg.com/564x/af/5b/53/af5b53eb38305d2a46ed607a8be6dddb.jpg)`,
+      backgroundImage: `url(https://i.pinimg.com/564x/9d/04/72/9d04726a8fadccca024110b19049aef9.jpg)`,
       backgroundSize: '100%'
     }}>
       {/* <Header /> */}
