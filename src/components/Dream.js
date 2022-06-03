@@ -5,7 +5,7 @@ function Dream({ dream }) {
     const { id, date, title, category, entry, tags } = dream;
     const tagSpace = `${tags} `
     return (
-        <div>
+        <div className='dream'>
             <h4>Dreamt on {date}</h4>
             <h3>{title}</h3>
             <h5>{category}</h5>

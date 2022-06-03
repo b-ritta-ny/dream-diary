@@ -9,7 +9,7 @@ function DreamPage() {
   const [isForm, setIsForm] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:3000/dreams/', {
+    fetch('http://localhost:3001/dreams', {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
@@ -25,10 +25,13 @@ function DreamPage() {
   }
 
   return (
-    <div className="DreamPage">
+    <div className="dreampage" style={{
+      backgroundImage: `url(https://i.pinimg.com/564x/af/5b/53/af5b53eb38305d2a46ed607a8be6dddb.jpg)`,
+      backgroundSize: '100%'
+    }}>
       {/* <Header /> */}
       <div className="sidebar">
-        <button onClick={() => setIsForm(!isForm)}>Show/hide new diary entry form</button>
+        <button onClick={() => setIsForm(!isForm)}>Show/Hide New Diary Entry Form</button>
         {isForm ? <NewDreamForm handleNewDream={handleNewDream} dreams={dreams} /> : null}
       </div>
       <DreamsContainer dreams={dreams} />

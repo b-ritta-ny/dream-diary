@@ -9,10 +9,21 @@ function Home(){
             width: '1400px',
             height: '650px'
           }}>
+
             <div className='page-title'>Dream Diary</div>
-            <div className='photodiv'>
+            <div className='row'>
+            <div className='container'>
+                <img className='leftphoto' src="https://i.imgur.com/KPhuwPL.png"/>
+            </div>
+
+            <div className='container'>
                 <img className='homephoto' src="https://i.imgur.com/8E7d1sO.png"/>
             </div>
+
+            <div className='container'>
+                <img className='rightphoto' src="https://i.imgur.com/bPvS1l9.png"/>
+            </div>
+          </div>
         </div>
 
     )
