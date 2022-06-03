@@ -10,23 +10,14 @@ export default function App() {
     <Router>
       <div>
         <nav>
-          <div className='homelink'>
-              <Link to="/" style={{ 
-                textDecoration: 'none',
-                color: '#040738',  
-                }}>HOME</Link>
+          <div>
+            <Link to="/">Home</Link>
           </div>
-          <div className='dreamlink'>
-              <Link to="/DreamPage" style={{ 
-                textDecoration: 'none',
-                color: '#040738', 
-                }}>DREAM DIARY</Link>
+          <div>
+            <Link to="/DreamPage">Dream Diary</Link>
           </div>
-          <div className='resourcelink'>
-              <Link to="/Resources" style={{ 
-                textDecoration: 'none',
-                color: '#040738', 
-                }}>RESOURCES</Link>
+          <div>
+            <Link to="/Resources">Resources</Link>
           </div>
         </nav>
 
