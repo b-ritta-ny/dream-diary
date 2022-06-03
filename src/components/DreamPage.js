@@ -8,7 +8,7 @@ function DreamPage() {
   const [isForm, setIsForm] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:3001/dreams', {
+    fetch('http://localhost:3000/dreams', {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'

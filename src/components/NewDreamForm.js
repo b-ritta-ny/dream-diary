@@ -22,7 +22,7 @@ function NewDreamForm({ handleNewDream }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch("http://localhost:3001/dreams", {
+        fetch("http://localhost:3000/dreams", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -51,7 +51,7 @@ function NewDreamForm({ handleNewDream }) {
             </select>
             <textarea type="text" id="entry" placeholder="Write your dream here..." rows={10} value={formState.entry} onChange={handleChange} />
             <Tags formState={formState} newTagList={newTagList} setNewTagList={setNewTagList} setFormState={setFormState} />
-            <input type="submit" id="logbutton" value="Log Your Dream" />
+            <input type="submit" value="Log your dream" />
 
         </form>
     )
